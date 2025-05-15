@@ -10,7 +10,7 @@ This repository describes all the steps, which are already installed and set up 
 3. Tải và cài đặt dump 1090 của flightaware
    link: https://github.com/flightaware/dump1090
    Chú ý chạy file deb xuất ra:
-   sudo dpkg -i dump1090-fa_10.0.1~bpo11+1_amd64.deb 
+   $ sudo dpkg -i dump1090-fa_10.0.1~bpo11+1_amd64.deb 
 5. tar 1090 wiedehpf
    https://github.com/wiedehopf/tar1090
 6. mlat client
