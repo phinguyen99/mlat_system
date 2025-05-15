@@ -1,0 +1,23 @@
+# Change the name of user and the user name after the /home in the directory
+
+[Unit]
+Description=mlat-client Service
+After=network.target
+
+[Service]
+User=pi1
+ExecStart=/home/pi1/mlat-client-venv/bin/mlat-client \
+  --input-type dump1090 \
+  --input-connect 127.0.0.1:30005 \
+  --lat 20.9797119 \
+  --lon 105.5238245 \
+  --alt 80 \
+  --user 72station \
+  --server 100.127.97.80:31090 \
+  --no-udp \
+  --results beast,connect,127.0.0.1:30104
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+
