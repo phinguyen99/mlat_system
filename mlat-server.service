@@ -1,0 +1,28 @@
+#Thay đổi server chú ý sửa tên User, đường dẫn Directory,
+
+
+[Unit]
+Description=MLAT server Service
+Wants=network.target
+After=network.target
+
+[Service]
+User=nucfl
+SyslogIdentifier=mlat-server
+WorkingDirectory=/home/nucfl/mlat-server
+Type=simple
+Restart=always
+RestartSec=10
+
+# Optional: Print Python version to journal on startup
+ExecStartPre=/home/nucfl/mlat-server-venv/bin/python3 --version
+
+ExecStart=/home/nucfl/mlat-server-venv/bin/python3 /home/nucfl/mlat-server/mlat-server \
+ --client-listen 0.0.0.0:31090 \
+ --filtered-basestation-listen 0.0.0.0:31003 \
+ --basestation-listen 0.0.0.0:31004 \
+ --write-csv /home/nucfl/mlat-server/positions.csv \
+ --work-dir /home/nucfl/mlat-server/workdir
+
+[Install]
+WantedBy=multi-user.target
