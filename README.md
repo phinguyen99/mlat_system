@@ -15,9 +15,9 @@ This repository describes all the steps, which are already installed and set up 
 
    Điền lat, lon cho receiver trong file:
    /etc/default/dump1090-fa
-   # Receiver location, used for some types of position decoding. Provide the location as
-   # signed decimal degrees. If not given here, dump1090 will also try to read a receiver
-   # location from /var/cache/piaware/location.env (written automatically by PiAware, if installed)
+   #Receiver location, used for some types of position decoding. Provide the location as**
+   #signed decimal degrees. If not given here, dump1090 will also try to read a receiver
+   #location from /var/cache/piaware/location.env (written automatically by PiAware, if installed)**
    RECEIVER_LAT= ?????????
    RECEIVER_LON= ?????????
 
