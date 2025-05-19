@@ -7,7 +7,7 @@ This repository describes all the steps, which are already installed and set up 
    
    Theo tài khoản của anh Nguyễn Anh Tuấn
    gmail:tuancoiz4@gmail.com
-2. Tải và cài đătj driver cho RTLSDR
+2. Tải và cài đặt driver cho RTLSDR
 3. Tải và cài đặt dump 1090 của flightaware
    link: https://github.com/flightaware/dump1090
    Chú ý chạy file deb xuất ra:
@@ -25,7 +25,7 @@ This repository describes all the steps, which are already installed and set up 
    https://github.com/wiedehopf/tar1090
 6. mlat client
    git clone trước, sau đó tạo virtual environment bên trong thư mục mlat-client
-   **Chú ý: không chạy build and ínstall bằng sudo cho hai câu lệnh**
+   **Chú ý: không chạy build and install bằng sudo cho hai câu lệnh**
    $ python3 setup.py build
    $ python3 setup.py install
 8. viết Service
